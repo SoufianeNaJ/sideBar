@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgba(2, 130, 250, 0.144);
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
+section .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+nav {
+    background: #fff;
+    height: 100vh;
+    width: 350px;
+}
+.close{
+    margin-left: -370px;
+}
+#menu{
+    transition: all 0.5s;
+}
+nav .logo .fa-xmark{
+    color: darkred;
+    font-size: 30px;
+}
+nav .logo h1{
+    font-size: 26px;
+    margin: 20px 0;
+}
+nav .logo h1 span{
+    color: rgb(0, 217, 255);
+}
+nav ul{
+    list-style: none;
+    margin: 20px 0;
+}
+nav ul li a{
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav ul li{
+    padding: 20px;
+    transition: all 0.5s;
+}
+nav ul li:hover{
+    background: rgba(0, 174, 255, 0.459);
+    padding-left: 30px;
+}
+section nav .menu-icon{
+    width: 100px;
+    margin: auto;
+    margin-top: 50%;
+}
+section nav .menu-icon i{
+    color: rgb(0, 183, 255);
+    margin: 20px 0;
+    margin-left: 10px;
+    font-size: 20px;
+}
+section .bars{
+    margin: 0 20px;
+    margin-top: 30px;
+}
+section .bars i{
+    font-size: 30px;
+    color: rgb(0, 183, 255);
+    border: 3px solid #00c3ff;
+}
+@media (max-width:600px) {
+    nav {
+        background: #fff;
+        height: 100vh;
+        width: 100%;
+    }
+    section .bars{
+        margin: 0;
+        margin-top: 0;
+        display: none;
+    }
+    section nav .menu-icon{
+        width: 100px;
+        margin: auto;
+        margin-top: 30%;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+}
